@@ -8,9 +8,9 @@ public class Main {
 
         while (!symboll_1) {
             System.out.print("Enter your symbol: ");
-            sym_1 = input.symboll_1();
+            sym_1 = input.nextLine();
 
-            if (sym_1() !="{[({[()]})]}")
+            if (sym_1.length() !="{[({[()]})]}")
             {
                 System.out.println("Bad input");
             }
