@@ -2,22 +2,22 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        boolean symboll_1 = false;
-        String sym_1 = "";
+        boolean symbol = false;
+        String sym = "";
         Scanner input = new Scanner(System.in);
 
-        while (!symboll_1) {
+        while (!symbol) {
             System.out.print("Enter your symbol: ");
-            sym_1 = input.nextLine();
+            sym = input.nextLine();
 
-            if (sym_1.length() !="{[({[()]})]}")
+            if (sym.length() !="{[({[()]})]}")
             {
                 System.out.println("Bad input");
             }
             else
-                symboll_1 = true;
+                symbol = true;
         }
 
-        System.out.println("Symbol is:" + sym_1);
+        System.out.println("Symbol is:" + sym);
     }
 }
