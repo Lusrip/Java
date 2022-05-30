@@ -2,22 +2,23 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        boolean symboll_1 = false;
-        String sym_1 = "";
+        //Объявление переменных
+        boolean symbol = false;
+        String sym = "";
         Scanner input = new Scanner(System.in);
-
-        while (!symboll_1) {
+        //Вывод сообщения о вводе символов
+        while (!symbol) {
             System.out.print("Enter your symbol: ");
-            sym_1 = input.symboll_1();
-
-            if (sym_1() !="{[({[()]})]}")
+            sym = input.nextLine();
+            //Условаие проверки корректности введенных символов
+            if (sym() !="{[({[()]})]}")
             {
                 System.out.println("Bad input");
             }
             else
-                symboll_1 = true;
+                symbol = true;
         }
-
-        System.out.println("Symbol is:" + sym_1);
+        //Вывод вводимых символов
+        System.out.println("Symbol is:" + sym);
     }
 }
